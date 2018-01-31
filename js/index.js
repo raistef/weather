@@ -3,9 +3,10 @@ $(document).ready(function(){
 	var kelvin, celsius, fahrenheit;
 	var city, description, country;
 	  
-	$.getJSON("http://ip-api.com/json", function(coord) {
-    lon = coord.lon;
-	lat=coord.lat; 
+	$.getJSON("https://freegeoip.net/json/", function(coord) {
+	
+    lon = coord.longitude;
+	lat=coord.latitude; 
     var api="https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=4882b61b9d6fa08f532b9197d4cb15a0";
   
        $.getJSON(api, function(data) { 
