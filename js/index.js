@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	var lon, lat;
 	var kelvin, celsius, fahrenheit;
 	var city, description, country;
