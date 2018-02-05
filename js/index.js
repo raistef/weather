@@ -14,7 +14,7 @@ $(document).ready(function(){
        city = data.name;
 	   country = data.sys.country;
 	   kelvin= data.main.temp;
-	   celsius=kelvin-273.15;
+	   celsius=kelvin-273.15-((kelvin-273.15)%1);
 	   fahrenheit=kelvin*9/5-459.67-((kelvin*9/5-459.67)%1); 
 	   description=data.weather[0].description;
 	   icon=data.weather[0].icon;
