@@ -77,3 +77,43 @@ margin:5%;
 	font-size:150%;
 	margin-top:2%;
 }
+
+#main {
+	border:1px red solid;
+	width:70vw;
+	height:50vw;
+	margin:auto;
+	
+}
+
+#main_temp {
+	border:1px red solid;
+	width:20vw;
+	height:20vw;
+	
+}
+
+#main_details {
+	border:1px red solid;
+	width:30vw;
+	height:20vw;
+	float: right;
+	position:relative;
+	top:-20vw;
+	
+}
+
+#days {
+	border:3px green solid;
+	width:70vw;
+	height:10vw;
+	position:relative;
+	top:-10vw;
+}
+.day {
+	border:1px yellow solid;
+	width:10vw;
+	height:10vw;
+	
+}
+
