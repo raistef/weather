@@ -6,10 +6,9 @@ $(document).ready(function(){
 	  
 	$.getJSON("https://freegeoip.net/json/", function(coord) {
 	
-    lon =coord.longitude;
+    lon = coord.longitude;
 	lat=coord.latitude; 
-	var api="https://api.openweathermap.org/data/2.5/forecast/daily?lat="+lat+"&lon="+lon+"&cnt=7&appid=4882b61b9d6fa08f532b9197d4cb15a0";
-	console.log(api);
+    var api="https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=4882b61b9d6fa08f532b9197d4cb15a0";
   
        $.getJSON(api, function(data) { 
        city = data.name;
@@ -27,7 +26,7 @@ $(document).ready(function(){
 		$("#city").html(city);
 		$("#country").html(country);
 		$("#celsius").html(celsius+"°"+"  C");
-		//$("#fahrenheit").html(fahrenheit+"°"+" F");
+		$("#fahrenheit").html(fahrenheit+"°"+" F");
 		$("#description").html(description.toUpperCase());
 		$(".icon").attr("src",iconLink);
     
@@ -49,19 +48,35 @@ $(document).ready(function(){
 		  
 		  
 			/////////////////////////////////--toggle celsius--///////////////////////////////////////// 
-				// $(".button").on("click", function(){
+				$(".button").on("click", function(){
 			
-				// if ( $(".button").text() == "/ F" ) {
-					// $("#celsius").html(fahrenheit+"°"+" F");
-					// $(".button").html("/ C"); 
-				// }
+				if ( $(".button").text() == "/ F" ) {
+					$("#celsius").html(fahrenheit+"°"+" F");
+					$(".button").html("/ C"); 
+				}
 			
-				// else {
-				  // $("#celsius").html(celsius+"°"+" C");
-				  // $(".button").html("/ F");  
-				// }
-				// });
-				
+				else {
+				  $("#celsius").html(celsius+"°"+" C");
+				  $(".button").html("/ F");  
+				}
+				});
+				var clicked=0;
+				$("#more").on("click", function(){
+					clicked++;
+					if (clicked%2!==0) {
+						$("#more").html("Close details...");
+						$("#humidity").html("Humidity: "+humidity+"%");
+						$("#wind").html("Wind speed: "+humidity+" m/s");
+						$("#pressure").html("Pressure: "+pressure+" hPa");
+					}
+					else {
+						$("#humidity").html("");
+						$("#wind").html("");
+						$("#pressure").html("");
+						$("#more").html("More data...");
+					}
+					
+				});
 		});
 	});
 });

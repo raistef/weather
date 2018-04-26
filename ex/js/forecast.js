@@ -12,20 +12,6 @@ $(document).ready(function(){
 	console.log(api);
   
        $.getJSON(api, function(data) { 
-         
-     var d = new Date();
-      var weekday = new Array(7);
-      weekday[0] =  "Sun";
-      weekday[1] = "Mon";
-      weekday[2] = "Tue";
-      weekday[3] = "Wed";
-      weekday[4] = "Thu";
-      weekday[5] = "Fri";
-      weekday[6] = "Sat";
-function day_name(nr) {
-  return weekday[(d.getDay()+nr)%7];
-}
-      var name_day = weekday[d.getDay()];
      
      max=[];
      min=[];
@@ -33,8 +19,6 @@ function day_name(nr) {
      humidity=[];
      pressure=[];
      wind=[];
-     city=data.city.name;
-     country=data.city.country;
          for (var i=0;i<7;i++) {
            max.push(data.list[i].temp.max-273.15-((data.list[i].temp.max-273.15)%1));
            console.log(max[i]);
@@ -71,8 +55,14 @@ function day_name(nr) {
      
      day7_icon=data.list[6].weather[0].icon;
      day7_iconLink="https://openweathermap.org/img/w/"+day7_icon+".png";
-		$("#main_temp h1").html(max[0]+"&#176; <span></span>");
-    $("#main_temp h1  span").html("\t"+min[0]+"&#176;");
+		//$("#city").html(city);
+		//$("#country").html(country);
+		//$("#celsius").html(celsius+"°"+"  C");
+		//$("#fahrenheit").html(fahrenheit+"°"+" F");
+		//$("#description").html(description.toUpperCase());
+		//$(".icon").attr("src",iconLink);
+    $("#main_temp h1").html(max[0]+"&#176; <span></span>");
+    $("#main_temp span").html("\t"+min[0]+"&#176;");
     $("#day1_humidity").html("Humidity: "+day1_humidity+"%");
     $("#day1_pressure").html("Pressure: "+day1_pressure+" hPa");
     $("#day1_wind").html("Wind: "+day1_wind+" meter/s");
@@ -81,39 +71,30 @@ function day_name(nr) {
     $("#day1 p").html(max[0]+"&#176; <span></span>");
     $("#day1 span").html("\t"+min[0]+"&#176;");
     $("#day1 img").attr("src", day1_iconLink);
-    $("#day1 h4").html(day_name(0));
          
     $("#day2 p").html(max[1]+"&#176; <span></span>");
     $("#day2 span").html("\t"+min[1]+"&#176;");
     $("#day2 img").attr("src", day2_iconLink);
-    $("#day2 h4").html(day_name(1));
          
     $("#day3 p").html(max[2]+"&#176; <span></span>");
     $("#day3 span").html("\t"+min[2]+"&#176;");
     $("#day3 img").attr("src", day3_iconLink);
-    $("#day3 h4").html(day_name(2));  
          
     $("#day4 p").html(max[3]+"&#176; <span></span>");
     $("#day4 span").html("\t"+min[3]+"&#176;");
     $("#day4 img").attr("src", day4_iconLink);
-    $("#day4 h4").html(day_name(3));
          
     $("#day5 p").html(max[4]+"&#176; <span></span>");
     $("#day5 span").html("\t"+min[4]+"&#176;");
     $("#day5 img").attr("src", day5_iconLink);
-    $("#day5 h4").html(day_name(4));
          
     $("#day6 p").html(max[5]+"&#176; <span></span>");
     $("#day6 span").html("\t"+min[5]+"&#176;");
     $("#day6 img").attr("src", day6_iconLink);
-    $("#day6 h4").html(day_name(5));
         
     $("#day7 p").html(max[6]+"&#176; <span></span>");
     $("#day7 span").html("\t"+min[6]+"&#176;");
     $("#day7 img").attr("src", day7_iconLink);
-    $("#day7 h4").html(day_name(6));
-         
-    $("#main_temp h3").html(city+", <span>"+country+"</span>");
     
 		if (celsius<5) { 
 			  $('body').css('background-image','url("img/winter.jpg")');

@@ -8,7 +8,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   
+  
+  
 }
 
 h1 {
@@ -83,10 +84,10 @@ margin:5%;
 
 #main {
 	border:1px grey solid;
-	width:63vw;
-	height:35vw;
+	width:70vw;
+	height:50vw;
 	margin:auto;
-	background-color:rgba(255,255,255,0.7);
+	
 }
 
 #main_temp {
@@ -120,24 +121,20 @@ margin:5%;
 	float: right;
 	position:relative;
 	top:-20vw;
-  padding-top:6vw;
-  padding-left:5vw;
-	font-weight:bold;
-  font-style:helvetica;
-  color:rgb(77, 77, 77);
-  line-height:1.5;
-  font-size:130%;
+  padding-top:3vw;
+  padding-left:3vw;
+	
 }
 
 #days {
   border-top:grey solid 2px;
-	width:63vw;
+	width:70vw;
 	height:10vw;
 	position:relative;
-	top:-20vw;
+	top:-10vw;
 }
 .day {
-	width:9vw;
+	width:10vw;
 	height:15vw;
   position:relative;
   left:2.3vw;
@@ -145,13 +142,6 @@ margin:5%;
 }
 .day img {
   width:4vw;
-}
-
-.day h4{
-  position:relative;
-  left:1vw;
-  color:grey;
-  font-size:110%;
 }
 .day p {
   font-size:2vw;
@@ -161,17 +151,4 @@ margin:5%;
   font-size:1.5vw;
   color:grey;
 }
-
-#body_forecast {
-  background-image:url("https://s-media-cache-ak0.pinimg.com/originals/68/e7/d8/68e7d8450f5b1ace7eaa3b8007df4966.jpg");
-}
-
-#main h3 {
-  position:relative;
-  top:3vw;
-  left:5vw;
-  bottom:1vw;
-}
-
-
 
