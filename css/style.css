@@ -84,33 +84,34 @@ margin:5%;
 #main {
 	border:1px grey solid;
 	width:63vw;
-	height:35vw;
+	height:32vw;
 	margin:auto;
 	background-color:rgba(255,255,255,0.7);
+  border-radius: 10% 0 10% 0;
 }
 
 #main_temp {
 	width:20vw;
-	height:20vw;
+	height:18vw;
 	
 }
 
 #main_temp img {
-  width:8vw;
+  width:7vw;
   position:relative;
   left:6vw;
-  top:2vw;
+  top:1vw;
 }
 
 #main_temp h1 {
   font-size:4vw;
   position:relative;
   left:5vw;
-  top:2vw;
+  
 }
 
 #main_temp h1 span {
-  font-size:3.6vw;
+  font-size:3.4vw;
   color:grey;
 }
 
@@ -132,13 +133,13 @@ margin:5%;
 #days {
   border-top:grey solid 2px;
 	width:63vw;
-	height:10vw;
+	height:9vw;
 	position:relative;
 	top:-20vw;
 }
 .day {
 	width:9vw;
-	height:15vw;
+	height:13vw;
   position:relative;
   left:2.3vw;
 	
@@ -168,9 +169,18 @@ margin:5%;
 
 #main h3 {
   position:relative;
-  top:3vw;
+  top:2vw;
   left:5vw;
   bottom:1vw;
+}
+
+#day1_descr {
+  font-family:"Comic Sans MS";
+  font-style:italic;
+  position:relative;
+  left:8vw;
+  top:0.5vw;
+  font-size:125%
 }
 
 
