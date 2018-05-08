@@ -49,7 +49,7 @@ function day_name(nr) {
      day1_icon=data.list[0].weather[0].icon;
      day1_iconLink="https://openweathermap.org/img/w/"+day1_icon+".png";
      day1_humidity=data.list[0].humidity;
-     day1_pressure=data.list[0].pressure;
+     day1_pressure=data.list[0].pressure-(data.list[0].pressure%1);
      day1_wind=data.list[0].speed;
      
      day2_min_kelvin=data.list[1].temp.min;
