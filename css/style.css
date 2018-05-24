@@ -117,9 +117,9 @@
 	#main_details {
 		width:30vw;
 		height:20vw;
-		position:relative;
+		float:right;
 		padding-top:6vw;
-		padding-left:5vw;
+		padding-right:5vw;
 		font-weight:bold;
 		font-style:helvetica;
 		color:rgb(77, 77, 77);
