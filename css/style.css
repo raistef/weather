@@ -1,8 +1,4 @@
-.day {
-    width: 100%;
-}
 
-@media only screen and (min-width: 768px) {
 	body {
 	  padding-top:6%;
 	  background:no-repeat center center fixed;        
@@ -184,7 +180,6 @@
 	  top:0.5vw;
 	  font-size:125%
 	}
-}
 
 
 
