@@ -118,7 +118,6 @@
 	#main_details {
 		width:30vw;
 		height:20vw;
-		float: right;
 		position:relative;
 		
 		padding-top:6vw;
@@ -130,18 +129,9 @@
 	  font-size:130%;
 	}
 
-	#days {
-	  position:relative;
-		
-	}
-	.day {
-	  position:relative;
-	}
 	
-
 	.day h4{
 	  position:relative;
-	  left:1vw;
 	  color:grey;
 	  font-size:110%;
 	}
