@@ -83,7 +83,7 @@
 
 	#main {
 		border:1px grey solid;
-		width:63vw;
+		width:54vw;
 		height:32vw;
 		margin:auto;
 		background-color:rgba(255,255,255,0.7);
@@ -119,19 +119,17 @@
 		width:30vw;
 		height:20vw;
 		position:relative;
-		
 		padding-top:6vw;
 		padding-left:5vw;
 		font-weight:bold;
-	  font-style:helvetica;
-	  color:rgb(77, 77, 77);
-	  line-height:1.5;
-	  font-size:130%;
+		font-style:helvetica;
+		color:rgb(77, 77, 77);
+		line-height:1.5;
+		font-size:130%;
 	}
 
 	
 	.day h4{
-	  position:relative;
 	  color:grey;
 	  font-size:110%;
 	}
