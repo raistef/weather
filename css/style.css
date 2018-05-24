@@ -136,20 +136,18 @@
 
 	#days {
 	  border-top:grey solid 2px;
-		width:63vw;
-		height:9vw;
+		
 		position:relative;
 		top:-20vw;
 	}
 	.day {
-		width:9vw;
-		height:13vw;
+		
 	  position:relative;
 	  left:2.3vw;
 
 	}
 	.day img {
-	  width:4vw;
+	  
 	}
 
 	.day h4{
