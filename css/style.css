@@ -1,3 +1,10 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .day {
+        width: 80%;
+    }
+}
+
 body {
   padding-top:6%;
   background:no-repeat center center fixed;        
@@ -181,13 +188,6 @@ margin:5%;
   left:8vw;
   top:0.5vw;
   font-size:125%
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .day {
-        width: 80%;
-    }
 }
 
 
