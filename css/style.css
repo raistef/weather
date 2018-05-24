@@ -131,20 +131,13 @@
 	}
 
 	#days {
-	  border-top:grey solid 2px;
-		
-		position:relative;
+	  position:relative;
 		
 	}
 	.day {
-		
 	  position:relative;
-	  left:2.3vw;
-
 	}
-	.day img {
-	  
-	}
+	
 
 	.day h4{
 	  position:relative;
