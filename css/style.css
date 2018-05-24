@@ -185,8 +185,8 @@ margin:5%;
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
+    .mobile_1col {
+        width: 80%;
     }
 }
 
