@@ -89,34 +89,25 @@
 	 	border-radius: 5% 0 5% 0;
 	}
 
-	#main_temp {
-		width:20vw;
-		height:18vw;
-
-	}
-
+	
 	#main_temp img {
-	  width:7vw;
-	  position:relative;
+	  
 	  left:6vw;
 	  top:1vw;
 	}
 
 	#main_temp h1 {
-	  font-size:4vw;
 	  position:relative;
 	  left:5vw;
 
 	}
 
 	#main_temp h1 span {
-	  font-size:3.4vw;
 	  color:grey;
 	}
 
 	#main_details {
-		width:30vw;
-		height:20vw;
+		
 		float:right;
 		padding-top:6vw;
 		padding-right:5vw;
@@ -132,10 +123,7 @@
 	  color:grey;
 	  font-size:110%;
 	}
-	.day p {
-	  font-size:2vw;
-	}
-
+	
 	.day p span {
 	  font-size:1.5vw;
 	  color:grey;
