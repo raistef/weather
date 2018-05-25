@@ -65,11 +65,11 @@
 }
 	.day h4{
 	  color:grey;
-	  font-size:110%;
+	  font-size:120%;
 	}
 	
 	.day p span {
-	  font-size:1.5vw;
+	  font-size:90%;
 	  color:grey;
 	}
 
@@ -80,7 +80,7 @@
 	  position:relative;
 	  left:8vw;
 	  top:0.5vw;
-	  font-size:125%
+	  font-size:125%;
 	}
 
 #day1_icon {
