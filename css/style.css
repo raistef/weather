@@ -1,105 +1,15 @@
 
-	body {
-	  padding-top:6%;
-	  background:no-repeat center center fixed;        
-	  background-size: cover;
-	  background-position:center;
-	  color:black;
-	  webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-
-	}
-
-	h1 {
-	  margin-top:2%;
-	  font-size:3em;
-	  font-family:"Bungee Shade";
-
-	}
-
-
-
-	#city, #country, #comma {
-	  padding-top:3%;
-	  font-family:Lobster;
-	  font-size:250%;
-	}
-
-	#celsius, #toggle {
-	  padding-top:4%;
-	  font-size:200%;
-	  letter-spacing: -2px;
-
-	  }
-
-	 #toggle {
-	 cursor:pointer;
-	 background:transparent;
-	 }
-
-	.border {
-		padding:3%;
-		border: 1px solid black;
-		margin-left:35%;
-		margin-right:35%;
-		background-color:rgba(256,256,256,0.7);
-		border-radius:0 10% 0 10%;
-	}
-
-	.button {
-	    padding: 3px 3px;
-	    text-align: center;
-	    text-decoration: none;
-	    font-size: 14px;
-	    margin-bottom:20%;
-	    background-color:white;
-	    color:black;
-	    font-weight:bold;
-	}
-
-	.descr {
-	  font-size:270%;
-	  font-family:"Indie Flower";
-	  margin-top:10%;
-	}
-
-	.icon {
-		width:70px;
-		margin:5%;
-	}
-
-	#more {
-		margin-top:5%;
-		cursor:pointer;
-	}
-
-	.justify {
-		text-align:justify;
-		font-size:150%;
-		margin-top:2%;
-	}
-
-	#main {
+ #main {
 		border:1px grey solid;
-		width:80%;
+		width:70%;
 		margin:auto;
 		background-color:rgba(255,255,255,0.7);
 	 	
 	}
 
-	
-	#main_temp img {
-	  
-	  left:6vw;
-	  top:1vw;
-	}
 
-	#main_temp h1 {
-	  position:relative;
-	  left:5vw;
-
+ #main_temp {
+		padding-top:20px;
 	}
 
 	#main_temp h1 span {
@@ -108,8 +18,7 @@
 
 	#main_details {
 		
-		float:right;
-		padding-top:6vw;
+		padding-top:5vw;
 		padding-right:5vw;
 		font-weight:bold;
 		font-style:helvetica;
@@ -118,6 +27,9 @@
 		font-size:130%;
 	}
 
+#days {
+  margin-top:30px;
+}
 	
 	.day h4{
 	  color:grey;
@@ -133,15 +45,10 @@
 	  background-image:url("https://s-media-cache-ak0.pinimg.com/originals/68/e7/d8/68e7d8450f5b1ace7eaa3b8007df4966.jpg");
 	  background-size: cover;
 	  background-attachment: scroll;
+    padding-top:50px;
 	}
 
-	#main h3 {
-	  position:relative;
-	  top:2vw;
-	  left:5vw;
-	  bottom:1vw;
-	}
-
+	
 	#day1_descr {
 	  font-family:"Comic Sans MS";
 	  font-style:italic;
@@ -151,5 +58,9 @@
 	  font-size:125%
 	}
 
+#day1_icon {
+  display:block;
+  margin:auto;
+}
 
 
