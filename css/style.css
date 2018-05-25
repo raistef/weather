@@ -1,10 +1,38 @@
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 
- #main {
-		border:1px grey solid;
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  
+}
+
+#body_forecast {
+	  background-image:url("https://s-media-cache-ak0.pinimg.com/originals/68/e7/d8/68e7d8450f5b1ace7eaa3b8007df4966.jpg");
+	  background-size: cover;
+    backgroun-repeat: no-repeat;
+	  background-attachment: scroll;
+   
+	}
+
+#main {
+    margin-top:20vw;
+    border:3px;
 		width:70%;
 		margin:auto;
-		background-color:rgba(255,255,255,0.7);
-	 	
+    background-color:rgba(255,255,255,0.7);
+	 	border-style:outset;
+   
 	}
 
 
@@ -28,9 +56,14 @@
 	}
 
 #days {
-  margin-top:30px;
+  margin-top:20px;
+  padding-top:10px;
+  	
 }
-	
+.day {
+  border-style:outset;
+  background-color:rgba(30,144,255, 0.3);
+}
 	.day h4{
 	  color:grey;
 	  font-size:110%;
@@ -41,15 +74,7 @@
 	  color:grey;
 	}
 
-	#body_forecast {
-	  background-image:url("https://s-media-cache-ak0.pinimg.com/originals/68/e7/d8/68e7d8450f5b1ace7eaa3b8007df4966.jpg");
-	  background-size: cover;
-    backgroun-repeat: no-repeat;
-	  background-attachment: scroll;
-    padding-top:50px;
-	}
-
-	
+		
 	#day1_descr {
 	  font-family:"Comic Sans MS";
 	  font-style:italic;
