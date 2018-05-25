@@ -44,6 +44,7 @@
 	#body_forecast {
 	  background-image:url("https://s-media-cache-ak0.pinimg.com/originals/68/e7/d8/68e7d8450f5b1ace7eaa3b8007df4966.jpg");
 	  background-size: cover;
+    backgroun-repeat: no-repeat;
 	  background-attachment: scroll;
     padding-top:50px;
 	}
