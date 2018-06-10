@@ -1,3 +1,17 @@
+
+@media only screen and (min-width: 1024px) {
+	#main {
+		width:70%;
+	}
+}
+
+@media only screen and (min-width: 1450px) {
+	#main {
+		width:60%;
+	}
+}
+
+
 .outer {
   display: table;
   position: absolute;
@@ -20,17 +34,16 @@
 #body_forecast {
 	  background-image:url("https://s-media-cache-ak0.pinimg.com/originals/68/e7/d8/68e7d8450f5b1ace7eaa3b8007df4966.jpg");
 	  background-size: cover;
-    backgroun-repeat: no-repeat;
+      backgroun-repeat: no-repeat;
 	  background-attachment: scroll;
    
 	}
 
-#main {
-    margin-top:20vw;
+ #main {
     border:3px;
-		margin:auto;
+	margin:auto;
     background-color:rgba(255,255,255,0.7);
-	 	border-style:outset;
+	border-style:outset;
    
 	}
 
@@ -61,7 +74,7 @@
 }
 .day {
   border-style:outset;
-  background-color:rgba(30,144,255, 0.3);
+  background-color:rgba(30,144,255, 0.4);
 }
 	.day h4{
 	  color:grey;
@@ -88,4 +101,14 @@
   margin:auto;
 }
 
+#day1 {
+	border-color:rgba(30,144,255, 0.7);
+}
+
+@media only screen and (max-width: 767px) {
+	#body_forecast {
+		background-image:none;
+		background-color:rgb(66, 134, 244);
+	}
+}
 
