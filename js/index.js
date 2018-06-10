@@ -1,4 +1,9 @@
+$(window).load(function(){
+	$('#loading').fadeOut('slow',function(){$(this).remove();});
+});
+
 $(document).ready(function(){
+	
 	
 	//gettig data from the weather API
 	
