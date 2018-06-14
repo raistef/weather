@@ -45,36 +45,40 @@ function day_name(nr) {
 	
          for (var i=0;i<7;i++) {
 			max.push(data.list[i].temp.max-273.15-((data.list[i].temp.max-273.15)%1));
-			console.log(max[i]);
+			
          }
          
          for (var i=0;i<7;i++) {
            min.push(data.list[i].temp.min-273.15-((data.list[i].temp.min-273.15)%1));
-           console.log(min[i]);
+           
          }
 		 for (var i=0;i<7;i++) {
            icon.push(day1_iconLink="https://openweathermap.org/img/w/"+data.list[i].weather[0].icon+".png");
-           console.log(icon[i]);
+           
          }
-	 day1_min_kelvin=data.list[0].temp.min;
-     day1_min_celsius=day1_min_kelvin-273.15-((day1_min_kelvin-273.15)%1);
-     
-     
-     day1_humidity=data.list[0].humidity;
-     day1_pressure=data.list[0].pressure-(data.list[0].pressure%1);
-     day1_wind=data.list[0].speed;
-     
-     day2_min_kelvin=data.list[1].temp.min;
-     day2_min_celsius=day2_min_kelvin-273.15-((day2_min_kelvin-273.15)%1);
-     day2_icon=data.list[1].weather[0].icon;
-        		
-		
+		 
+		 for (var i=0;i<7;i++) {
+           humidity.push(data.list[i].humidity);
+           console.log(humidity[i]);
+         }
+		 
+		 for (var i=0;i<7;i++) {
+           pressure.push(data.list[i].pressure-(data.list[i].pressure%1));
+           console.log(pressure[i]);
+         }
+		 
+		 for (var i=0;i<7;i++) {
+           wind.push(data.list[i].speed);
+           console.log(wind[i]);
+         }
+		 
+	 		
 	$("#main_temp h1").html(max[0]+"&#176; <span></span>");
 	$("#main_temp h1  span").html("\t"+min[0]+"&#176;");
 	$("#main_icon").attr("src", icon[0]);
-    $("#day1_humidity").html("Humidity: "+day1_humidity+"%");
-    $("#day1_pressure").html("Pressure: "+day1_pressure+" hPa");
-    $("#day1_wind").html("Wind: "+day1_wind+" meter/s");
+    $("#humidity").html("Humidity: "+humidity[0]+"%");
+    $("#pressure").html("Pressure: "+pressure[0]+" hPa");
+    $("#wind").html("Wind: "+wind[0]+" meter/s");
     $("#day1 p").html(max[0]+"&#176; <span></span>");
     $("#day1 span").html("\t"+min[0]+"&#176;");
     $("#day1 img").attr("src", icon[0]);
@@ -120,6 +124,9 @@ function day_name(nr) {
 		$("#main_temp h1  span").html("\t"+min[day]+"&#176;");
 		$("#main_icon").attr("src", icon[day]);
 		$("#day1").css("border-color", "white");
+		$("#humidity").html("Humidity: "+humidity[day]+"%");
+		$("#pressure").html("Pressure: "+pressure[day]+" hPa");
+		$("#wind").html("Wind: "+wind[day]+" meter/s");
 	}
 	
 	function off_day(day) {
@@ -127,6 +134,9 @@ function day_name(nr) {
 		$("#main_temp h1  span").html("\t"+min[0]+"&#176;");
 		$("#main_icon").attr("src", icon[0]);
 		$(this).css("border-color", "grey");
+		$("#humidity").html("Humidity: "+humidity[0]+"%");
+		$("#pressure").html("Pressure: "+pressure[0]+" hPa");
+		$("#wind").html("Wind: "+wind[0]+" meter/s");
 	}
 	
 	$( "#day2" ).mouseover(function() {
