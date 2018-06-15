@@ -11,6 +11,20 @@
 	}
 }
 
+.fa-caret-left {
+	margin-top:28px;
+	margin-left:-5px;
+}
+
+.fa-caret-right {
+	margin-top:28px;
+	margin-left:-10px;
+	cursor:pointer;
+}
+
+.fa-caret-right:hover {
+	color:grey;
+}
 
 .outer {
   display: table;
@@ -102,7 +116,7 @@
 }
 
 #day1 {
-	border-color:rgba(30,144,255, 0.7);
+	border: 1px outset rgba(30,144,255, 0.7);
 }
 
 #loading {

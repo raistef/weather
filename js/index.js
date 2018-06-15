@@ -16,7 +16,7 @@ $(document).ready(function(){
     lon =coord.longitude;
 	lat=coord.latitude; 
 	var api="https://api.openweathermap.org/data/2.5/forecast/daily?lat="+lat+"&lon="+lon+"&cnt=7&appid=4882b61b9d6fa08f532b9197d4cb15a0";
-	console.log(api);
+	//console.log(api);
   
        $.getJSON(api, function(data) { 
          
@@ -198,6 +198,68 @@ function day_name(nr) {
 		$(this).css("border-color", "white");
 		$("#day1").css("border-color", "rgba(30,144,255, 0.7)");
 	});
+	
+	$( "#day7" ).mouseover(function() {
+		on_day(6);
+		$(this).css("border-color", "rgba(30,144,255, 0.7)");
+		
+	});
+	
+	$( "#day7" ).mouseleave(function() {
+		off_day(6);
+		$(this).css("border-color", "white");
+		$("#day1").css("border-color", "rgba(30,144,255, 0.7)");
+	});
+	
+	
+	
+	//slider
+	$( "#right_swing" ).click(function() {
+		$("#day6").removeClass("hidden-lg");
+		$("#day6" ).addClass("col-md-2");
+		$("#day6" ).addClass("col-sm-2");
+		$("#day7").removeClass("hidden-lg");
+		$("#day7" ).addClass("col-md-2");
+		$("#day7" ).addClass("col-sm-2");
+		$("#day1").css("display", "none");
+		$("#day2").css("display", "none");
+		$("#right_swing").hover(function() {
+		  $(this).css("color","black")
+		});
+		$( "#left_swing" ).css("cursor", "pointer");
+		$( "#right_swing" ).css("cursor", "default");
+		$("#left_swing").mouseover(function() {
+		  $(this).css("color","gray")
+		});
+		$("#left_swing").mouseleave(function() {
+		  $(this).css("color","black")
+		});
+				
+	});
+	
+	$( "#left_swing" ).click(function() {
+		$("#day6").addClass("hidden-lg");
+		$("#day6" ).addClass("hidden-md");
+		$("#day6" ).addClass("hidden-sm");
+		$("#day7").addClass("hidden-lg");
+		$("#day7" ).addClass("hidden-md");
+		$("#day7" ).addClass("hidden-sm");
+		$("#day1").css("display", "inline");
+		$("#day2").css("display", "inline");
+		$("#left_swing").hover(function() {
+		  $(this).css("color","black")
+		});
+		$( "#right_swing" ).css("cursor", "pointer");
+		$( "#left_swing" ).css("cursor", "default");
+		$("#right_swing").mouseover(function() {
+		  $(this).css("color","gray")
+		});
+		$("#right_swing").mouseleave(function() {
+		  $(this).css("color","black")
+		});
+				
+	});
+	
 		/*if (celsius<5) { 
 			  $('body').css('background-image','url("img/winter.jpg")');
 		}
