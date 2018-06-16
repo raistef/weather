@@ -14,7 +14,7 @@
 .btn-primary {
 	background-color:rgba(30,144,255, 0.4);
 	border:2px white outset;
-	
+	z-index:100;
 }
 
 .btn-primary:hover {
@@ -26,37 +26,7 @@
 .search {
 	margin-top:3%;
 }
-.tooltiptext {
-    visibility: hidden;
-    width: 60px;
-    background-color:  white;
-    color: grey;
-    text-align: center;
-    border:1px solid black;
-    /* Position the tooltip */
-    /* position: relative; */
-    /* z-index: 1; */
-    /* top: 100%; */
-    /* left: 50%; */
-    /* margin-left: -60px; */
-}
 
-/* .btn-primary:hover .tooltiptext { */
-    /* visibility: visible; */
-/* } */
-
-/* .fa-search:hover { */
-	/* color:grey; */
-	/* cursor:pointer; */
-	
-/* } */
-
-/* .fa-search{ */
-	
-	/* position: relative; */
-    /* display: inline; */
-	/* left:4px; */
-/* } */
 
 
 
