@@ -138,6 +138,8 @@
 .day {
   border-style:outset;
   background-color:rgba(30,144,255, 0.4);
+  border-radius:12px;
+  
 }
 	.day h4{
 	  color:grey;
