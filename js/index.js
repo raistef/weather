@@ -17,8 +17,13 @@ $(window).load(function(){
 	//in case the visitor searchs for a city
 	$( "#submit-btn" ).click(function() {
 		var input=$("#city").val();
+		var success = false;
 		$.getJSON("https://api.openweathermap.org/data/2.5/forecast/daily?q="+input+"&cnt=7&appid=4882b61b9d6fa08f532b9197d4cb15a0", function(data) { 
-         console.log("https://api.openweathermap.org/data/2.5/forecast/daily?q="+input+"&cnt=7&appid=4882b61b9d6fa08f532b9197d4cb15a0");
+        success=true; 
+		//if the city is not found
+		if (data.cod>400) {
+			alert("Sorry :( <br>The city was not found.");
+		}
 		 
 		//get the name of the day
 		var d = new Date();
@@ -296,6 +301,19 @@ $(window).load(function(){
 				// });
 				
 		});
+		
+
+
+
+
+			// Set a 1-second timer tocheck if it finds the city
+			setTimeout(function() {
+				if (!success)
+				{
+					// Display error to user
+					alert("Sorry :(\nThe city was not found"); 
+				}
+			}, 1000);
 	});
 	
 	
