@@ -9,7 +9,7 @@ $(window).load(function(){
 	var city, description, country;
 	
 	//get longitude and latitude from the api
-	$.getJSON("http://api.ipstack.com/95.65.57.19?access_key=6c241c17ad4a66546d8d491f7ca89773&%20output%20=%20json", function(coord) {
+	$.getJSON("https://freegeoip.net/json/", function(coord) {
 	
     lon =coord.longitude;
 	lat=coord.latitude; 
