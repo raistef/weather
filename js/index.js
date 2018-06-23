@@ -9,10 +9,10 @@ $(window).load(function(){
 	var city, description, country;
 	
 	//get longitude and latitude from the api
-	$.getJSON("https://freegeoip.net/json/", function(coord) {
+	$.getJSON("https://geoipify.whoisxmlapi.com/api/v1?apiKey=at_LGyBcLtuHI6RkdzwQX6E4VTu5qvHE", function(coord) {
 	
-    lon =coord.longitude;
-	lat=coord.latitude; 
+    lon=coord.location.lng;
+	lat=coord.location.lat; 
 	
 	//in case the visitor searchs for a city
 	$( "#submit-btn" ).click(function() {
