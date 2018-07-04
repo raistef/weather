@@ -1,5 +1,14 @@
+//Trigger the loading icon if the website takes time to load
+
 $(window).load(function(){
 	$('#loading').fadeOut('slow',function(){$(this).remove();});
+});
+
+//Trigger the submit button when the visitor presses anter after writing the name of a city in the Search box
+$("#city").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#submit-btn").click();
+    }
 });
 
 	
